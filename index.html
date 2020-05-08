@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<style>
+	body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fa-twitter-square{
+	color:white;
+	font-size: 30px;}
+.fa-facebook{
+	color:white;
+	font-size: 30px;}
+
+.fa-instagram{
+	color:white;
+	font-size: 30px;}
+
+.fa-youtube-square{
+	color:white;
+	font-size: 30px;}
+
+
+/*start Nvbar*/
+#hea{ float: right; }
+
+.Navbar{
+	box-sizing: border-box;
+	background: white;}
+
+
+
+
+*{
+	padding:0;
+	margin: 0;
+	font-size:13px;
+	
+ }
+
+
+
+body{
+	background-size: cover;
+	background-position: center;
+
+}
+
+.menu-bar
+{
+	background:  white;
+	height: 80px;
+	float: right;
+
+	
+}
+
+.menu-bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: white;
+	height: 90px;
+
+}
+
+
+ .menu-bar ul li
+ {
+ 	width: 80px;
+ 	margin: 10px;
+ 	padding:14px;
+
+ }
+
+
+.menu-bar ul i a
+{
+	text-decoration: none; 
+	color: white;
+}
+
+
+.menu-bar.fa{margin-left:8px; }
+
+.active, .menu-bar ul li:hover
+{
+
+	color: white;
+
+	color: black;
+
+}
+
+.active{background-color: blue;
+		color: white;
+		width: 30px;
+		height: 30px;
+		margin-top: 100px;
+	border-radius: 50px;
+	color: black;}
+
+.sub-menu-1{
+	display: none;
+
+}
+.menu-bar ul li:hover .sub-menu-1{
+	display: block;
+	position: absolute;
+	background-color: white;
+	  z-index:500; 
+
+	margin-top:15px;
+	margin-left: -15px;
+	font-size: 13px;
+	color: white;
+			margin: 20px;
+
+
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+
+	display: block;
+	margin:10px;
+	background-color: white;
+	  z-index:50000000; 
+
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+	width: 150px;
+	padding: 100px;
+	border-bottom: 1px dotted black;
+	background:white;
+	
+	padding: 1px;
+	border-radius: 90;
+
+
+	text-align:left;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+	border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+
+	color: black;
+}
+
+.sub-menu-2
+{
+	display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+	position: absolute;
+	display: block;
+	margin-top:  -40px;
+	margin-left: 140px;
+
+}
+
+.fa-angle-right{
+	float: right;
+
+}
+
+
+.link-decoration{
+	text-decoration:none;
+		
+}
+
+a{text-decoration: none;
+   color: black;
+   font-size: 14px;
+   font-weight: 600;
+    }
+
+menu-bar ul li a:hover{
+	color: white
+
+
+}
+.active ul li a:hover{
+	background-color: white;
+}
+
+a hover{		background-color: white;
+}
+/*ENd NAvbar*/
+
+
+/*Sllide show*/
+.mySlides {display:none;}
+
+/*ENd Slide show*/
+
+/* animated div start */
+*{box-sizing: border-box;}
+.rowa{
+	margin-right: -15px;
+	margin-left: -15px;
+	display: block;
+	line-height: 1.7
+	color:#666666;
+	font-size: 14px;
+	font-family: sans-serif;
+	height: 230px;
+	margin-top: -9px;
+}
+
+.center11{
+	position: relative;
+	margin-bottom: 0;
+	font-weight: 500px;
+	color: white;
+	 line-height: 1.4;
+	 text-align: center;
+
+}
+/*animated div end*/
+
+
+/* Image GAllery Start*/
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Image gallery ENd*/
+
+/*footer*/
+.footer{background-position: initial;
+	background-size: initial;
+	background-repeat: initial;
+	background-attachment: initial;
+	background-origin: initial ;
+	background-clip: initial; 
+	background-color: rgb(37, 39, 46);
+	display: block;
+	box-sizing: border-box;
+	line-height: 1.7;
+	color: #666666;
+	font-size: 14px;
+	 }
+	
+/*footer End*/
+
+
+
+	</style>
+</head>
+<body>
+<div class="container-fluid"style="background-color: rgb(49, 109, 195);height: 50px;"> 
+	<div class="row">
+    	<div class="col-sm-3" style="margin-top: 9px;" >
+    		&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="https://www.facebook.com/?ref=logo">
+				<i class="fa fa-facebook"></i>
+			</a>
+				&nbsp;
+			<i class="fa fa-twitter-square" aria-hidden="true" ></i>&nbsp;
+			<i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;
+			<i class="fa fa-youtube-square" aria-hidden="true"></i>&nbsp;
+			<img src="image/what.png" height="30px" style="margin-top: -15px;">&nbsp;
+    	</div>
+
+
+    	<div class="col-sm-5" style="margin-top: 11px;">
+    		<p style="color: white;">Millions of people's life has changed, millions more awaiting your donation
+    		</p>
+    	</div>
+
+
+    	<div class="col-sm-4" style="margin-top: 9px;" >
+    		<center><table style="border-collapse:separate;border-spacing: 10px 0px;">
+    			<tr>
+    				<td style=" color: #427900;"><button>UK Donor </button></td>
+    				<td style="color: #427900;"><button>Donate Now</button></td>
+    				<td style="color: #427900;"><button>SMIT Result </button></td>
+    			</tr>
+
+
+
+    		</table>
+    	</center>
+    	
+
+    	</div>
+    </div>
+
+</div>
+
+<!--after head-->
+<div class="container-fluid" style="height: 2%;width: 100%;margin: 0;padding: 0;box-sizing:border-box; margin-bottom:-100px;background-color: white;height: 90px;position:sticky; top: 0rem; z-index: +1;" >
+	<img src="image/saylani.png" style="height:85px; width:450px; "> 
+
+
+<div class="menu-bar" style=""  >
+	<ul class="Navbar" class="link-decoration" >
+		<li class="active" style="padding:  10px;margin-top: 17px;width: 63px; background-color: rgb(49, 109, 195);"><a href="#"  > Home</a></li>
+	
+<!--Drop Down About-->
+		<li ><a href="#">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true" style=></i>
+			<div class="sub-menu-1">
+				<ul >
+					<li><a href="#" class="link-decoration">Introduction</a></li>
+					<li><a href="#">Chairman Message</a></li>
+					<li><a href="#">Saylani Annual Report</a></li>
+				</ul>
+			</div>
+		</li>
+<!------------About       END-->
+
+<!------------Saylani Services start-->
+
+		<li style="height: 100px;"><a href="#" >Saylani Services &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+								<!--into drop down-->
+
+			<div class="sub-menu-1" style="margin-top: -10px;">
+				<ul>
+
+					<!--for Education -->
+					<li class="hover-me"><a href="#">Education</a><i class="fa fa-angle-right"></i>
+						<div class="sub-menu-2">
+							<ul>
+								<li><a href="#"> Saylani Mass Training</a></li>
+								<li><a href="#">Green House</a></li>
+							</ul>
+						</div>
+					</li>
+					<!--Education End-->
+
+    <!-- FOr Medical--  ------------------------------------------------------------->
+					<li class="hover-me"><a href="#">Medical </a><i class="fa fa-angle-right"></i>
+						<div class="sub-menu-2">
+							<ul>
+								<li><a href="#"> Saylani Clinic Hospital</a></li>
+								<li><a href="#">Medical Internship</a></li>	
+							</ul>
+						</div>
+					</li>
+<!--END MEDIcal-->
+
+
+    <!-- FOr Welfare-- ---------------------------------------------------------------->
+
+					<li class="hover-me"><a href="#">Welfare</a><i class="fa fa-angle-right"></i>
+						<div class="sub-menu-2" >
+							<ul style="background-color: white; height: 200px;">
+								<li><a href="#"> Family Adoption</a></li>
+								<li><a href="#">Wedding Help</a></li>	
+								<li><a href="#">Hajj Application</a></li>
+								<li style="margin-top: -8px;"><a href="#">Saylani Dastarkhuwan</a></li>
+								<li style="margin-top: -8px;"><a href="#">Online Sadqa</a></li>
+								<li style="margin-top: -8px;"><a href="#">Book</a></li>
+							</ul>
+						</div>
+					</li>
+
+	    <!-- FOr Welfare-       ENd----------------------------------------------------------->
+
+
+
+					
+				</ul>
+			</div>
+		</li>
+
+<!------------Saylani Services Ends-->
+
+
+		<!------------Future Project Start-->
+
+		<li  ><a href="#">Future Project &nbsp;&nbsp;&nbsp; <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+				<div class="sub-menu-1" style="margin-top: -10px;">
+					<ul>
+						<li><a href="#">Saylani City</a></li>
+						<li><a href="#">Saylani University</a></li>
+						<li><a href="#">Saylani Mass Training</a></li>
+					</ul>
+		       	</div>
+		</li>
+
+		<!------------Future Project Ends-->
+
+		<li><a href="#" > Media</a></li>
+		<li><a href="#" >News</a></li>
+		<li><a href="#" >Donation</a></li>
+
+	</ul>
+</div>
+</div>
+
+
+
+<!--Slde show-->
+<div class="w3-content w3-section" style="max-width:100%; ">
+  <img class="mySlides w3-animate-top" src="image/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="image/slider1.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/slider2.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="image/slider1.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/slider2.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="image/slider1.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/slider2.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="image/slider1.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/slider2.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-bottom" src="image/slider1.png" style="width:100%">
+  <img class="mySlides w3-animate-top" src="image/slider2.png" style="width:100%">
+</div>
+<br>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
+}
+</script>
+
+<!--SlideShow end-->
+<div style="background-color: white;">
+<div class="container">
+	<marquee  onMouseOver="this.stop()" onMouseOut="this.start()" style="background-color:#316DC3;height:25px;border-radius: 7px; color: white;font-weight: 600px; " >
+    <span style="color: rgb(0, 255, 0);font-weight: 600;">(News 1 Dated:20-july-2019) :</span> President of Pakistan (Dr. Arif Alvi) Visited Saylani Welfare International Trust HeadOffice Karachi.&nbsp;&nbsp;&nbsp;&nbsp;
+    <span style="color: rgb(0, 255, 0);font-weight: 600;">(News-2 Dated:15-05-2019) :</span>
+    Saylani Welfare Announced "Donation Application"<a href="https://web.facebook.com/saylaniwelfare/photos/a.258515937507690/3332489120110341/?type=3&theater" style="color: blue;">More Detail</a>&nbsp;&nbsp;
+	</marquee>
+<br>
+</div>
+<!--marquee ENd-->
+<!--Intro------------------------------>
+
+<div style="background-color: #f7f8fa; width: 100%">
+<center>
+	<div>
+		<h6 ><span style="color:blue;font-size: 45px; font-family: 'Merriweather', serif;">Intro</span><span style="color: green;font-size: 45px;font-family: 'Merriweather', serif;">duction</span> </h6>
+		<p>
+			<span style="width: 50px;color: green;font-size: 10px; border-bottom:4px solid green; ">______</span>&nbsp;&nbsp;&nbsp;&nbsp;<img src="image/logo.png" style="height: 85px;width: 85px;">
+			&nbsp;&nbsp;&nbsp;&nbsp;
+			<span style="width: 50px;color: green;font-size: 10px;border-bottom:4px solid green;">______
+			</span>
+		</p>
+		<p style="text-align: justify;padding: 100px;font-family: 'Open Sans';font-weight: 900px; font-size: 20px;">Established in May 1999 by famous spiritual and religious scholar Maulana Bashir Ahmed Farooqui, Saylani Welfare International Trust was built on the fundamentals of breaking the cycle of poverty, alleviating the financial troubles of the poor, giving people a chance to live a dignified life and spreading happiness.
+<br>
+We are an organization that believes in lighting up the lives of underprivileged people across the world. We endeavor to provide the best quality services in areas including food, education, medical and social welfare free of cost to people living in the dark. With over 60 different sectors, we feed thousands of hungry people each day, hundreds more are given the hope of life through medical health care, many are educated to become leaders of tomorrow and several are given the opportunity to stand on their feet financially.
+<br>
+Today, we are proud to say that our physical presence extends throughout Pakistan with a vast network of 125 branches operating in major cities including Karachi, Lahore, Islamabad, Rawalpindi, Hyderabad and Faisalabad. Apart from Pakistan, we have overseas offices in the UK, USA and UAE as well. Our worldwide branches are operating under the guidance of a team of over 2,000 working professionals who help almost 125,000 people on a daily basis.
+<br>
+We strongly believe that a little help goes a long way and our work would not be possible without the generous support of our valuable donors. Our local and international donors have graciously lent us a hand by supporting our causes and enabling us to serve the needs of people in need</p>
+			
+	</div>	
+</center>
+</div>
+<!--End Intro ------------------------------------------------->
+<!--Animated Div-->
+<div class="rowa">
+<div class="container" style="background-color: #314cfb; width: 100%;padding: 50px;">
+	<div class="col-sm-3" >
+		<div class="center11">
+			<img src="image\food.png" style="height: 40px;">
+			<h2 >125,000</h2>
+			<h5 style="color: white;font-weight: 600;margin-bottom: 10px;margin-top: 10px;box-sizing: border-box;">Daily Dastarkhuwaan<span style="color: #00FF00;">(Monthly)</span>
+			</h5>
+		</div>
+	</div>
+	<div class="col-sm-3" >
+		<div class="center11">
+			<img src="image\family.png" style="height: 40px;">
+			<h2 >7,500</h2>
+			<h5 style="color: white;font-weight: 600;margin-bottom: 10px;margin-top: 10px;box-sizing: border-box;">Family Adoption<span style="color: #00FF00;">(Monthly)</span>
+			</h5>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="center11">
+			<img src="image\medical.png" style="height: 40px;">
+			<h2 >43,749</h2>
+			<h5 style="color: white;font-weight: 600;margin-bottom: 10px;margin-top: 10px;box-sizing: border-box;">Medical<span style="color: #00FF00;">(Monthly)</span>
+			</h5>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="center11">
+			<img src="image\education.png" style="height: 40px;">
+			<h2 >180,000</h2>
+			<h5 style="color: white;font-weight: 600;margin-bottom: 10px;margin-top: 10px;box-sizing: border-box;"> Education <span style="color: #00FF00;">(Monthly)</span>
+			</h5>
+		</div>
+	</div>
+</div>
+</div>
+
+<!--Animated DIV----------------END ----------------------------------------------->
+
+<!--What we are doing      Start------------------------------------------------->
+<div style="background-color: #f7f8fa;position: relative;display: block;box-sizing:border-box;">
+		<div class="container" style="padding-top: 50px;padding-bottom: 30px;width: 970px;padding-right:15px;padding-left: 15px;margin-right:auto;margin-left: auto;line-height: 1.7;font-size: 14px;">
+			<div class="section-title" style="margin-bottom: 30px;text-align: center;box-sizing: border-box;line-height: 1.7;">
+				<div class="row" style="margin-left: -15px;margin-right: -15px;box-sizing: border-box;text-align: center;">
+					<div class="col-sm-10" style="margin-left: 8.33%;width: 83.3;float: left;position: relative;padding-right: 15px;padding-left: 15px;text-align: center;">
+						<h2 style="font-family: 'Merriweather', serif;color: #316DC3;font-size: 32px;font-weight: 600;">"What We"<span style="color: #427900;font-weight: 600;font-size: 32px;">Are Doing?</span>
+						</h2>
+						<div style="margin: auto;max-width: 160px;position: relative;text-align: center;">
+							<div style="background-color: #427900;height: 2px;position: absolute;right: 10px;top: 30px;width: 36px;box-sizing: border-box;"></div>
+							<img src="image/salog.png" style="height: 45px;">
+							<div style="background-color: #427900;height: 2px;position: absolute;left: 10px;top: 30px;width: 36px;box-sizing: border-box;"></div>
+							<p style="margin-top: 10px;margin: 0 0 10px;text-align:  center;"></p>
+							<br>
+						</div>
+						<!--section-->
+					<div style="box-sizing: border-box;display: block;">
+						<div style="margin-right: -85px;margin-left: -85px;box-sizing: border-box;">
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block; border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/sadqa.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;  ">Online Sadqah</h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLLLLLL-->
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block;border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/welfare.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;   ">Welfare</h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLL-->
+							<!--LLLLLLLLLLLLLLLLLLLLLLLL-->
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block;border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/medical.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;   ">Medical </h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLL-->
+							<!--end-->
+							<!--LLLLLLLLLLLLLLLLLLLLLLLL-->
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block;border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/Dastarkhwan.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;   ">Dastarkhuaan</h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLL-->
+							<!--end-->
+
+							<!--LLLLLLLLLLLLLLLLLLLLLLLL-->
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block;border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/ROPLANT.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;   ">Ro-Plant</h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLL-->
+							<!--end-->
+
+							<!--LLLLLLLLLLLLLLLLLLLLLLLL-->
+							<div class="col-sm-4">
+								<div style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);background-color: white;margin-bottom: 30px;padding:10px;text-align: center;box-sizing: border-box;display: block;border-radius: 10px;">
+									<a href="#" style="vertical-align: middle;visibility: visible;">
+										<img src="image/education.png" style="width: 70px;">
+									</a>
+									<h4 style="margin-top: 20px;font-weight: 600px;line-height: 1.4;color: #316DC3;font-size: 18px;margin-bottom: 10px;box-sizing:border-box;text-align: center;   ">Education</h4>
+									<p></p>
+								</div>
+							</div>
+							<!--LLLLLLLLLLLLLLLLLLLL-->
+							<!--end-->
+
+					</div>
+
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+<!--End What ere doing  ------------------------------------------------------------------------>
+
+
+
+<!--MIssion STarts--------------------------------------->
+<div class="container" style="padding: 60px;padding-bottom: 30px;width: 80%;padding-right: 15px; padding-left: 15px;margin-right: auto;margin-left: auto;display: block;">
+	<div>
+		<div style="margin-right: -15px;margin left: -15px;box-sizing: border-box;display: block;">
+			<div class="col-sm-8" style="float: left;position: relative;min-height: 1px;padding-right: 15px;padding-left: 15px;box-sizing: border-box;display: block;">
+				<h3 style="margin-top: 0px;position: relative;margin-bottom: 30px;padding-bottom: 10px;font-family: sans-serif;font-weight: 600px;line-height: 1.4px;color: #316DC3;font-size: 24px;">
+					MISSION AND UPCOMING PROJECTS
+					<br>
+					<br>
+					<br>
+					<br><br>
+					<br>
+					<span style=" bottom: -1px;height: 3px;left: 0;position: absolute;width: 50px; background-color: green; ">
+					</span>
+				</h3>
+				<div style="margin-right: -15px;margin-left: -15px;box-sizing: border-box;display: block;line-height: 1.7; ">
+					<div class="col-sm-6" style="width: 50%;float: left;position: relative;min-height: 1px;padding-left: 15px;border-radius: 6px;padding-right: 15px;box-sizing: border-box;display: block;line-height: 1.7;">
+						<div style="text-align: center;margin-top: 0px;margin-bottom: 20px;padding: 15px;border:1px solid #eeeeee;background-color: #f7f8fa;overflow: hidden;zoom:1;box-sizing: border-box; border-radius: 6px;">
+							<a href="#" style="margin-right: 30px;padding: 0px;float: left;vertical-align: top;display: table-cell;text-decoration: none;text-align: left;">
+								<img src="image/Hepatitis.png">
+							</a>
+							<div style="display: table-cell;vertical-align: top;width: 10000px;overflow: hidden;zoom:1;box-sizing: border-box;text-align: left;line-height: 1.7;box-sizing: border-box;">
+								<h4 style="font-size: 15px;font-weight: 600;line-height: 1.4;color: #316DC3;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box; font-family:    'Merriweather', serif;">
+									HEPATITIS
+								</h4>
+								<p style="margin-bottom: 10px;margin: 0 0 10px;box-sizing: border-box;"></p>
+							</div>
+						</div>
+					</div>
+
+					<!---->
+					<div class="col-sm-6" style="width: 50%;float: left;position: relative;min-height: 1px;padding-left: 15px;padding-right: 15px;box-sizing: border-box;display: block;line-height: 1.7;">
+						<div style="text-align: center;margin-top: 0px;margin-bottom: 20px;padding: 15px;border:1px solid #eeeeee;background-color: #f7f8fa;overflow: hidden;zoom:1;box-sizing: border-box; border-radius: 6px;">
+							<a href="#" style="margin-right: 30px;padding: 0px;float: left;vertical-align: top;display: table-cell;text-decoration: none;text-align: left;">
+								<img src="image/housing.png">
+							</a>
+							<div style="display: table-cell;vertical-align: top;width: 10000px;overflow: hidden;zoom:1;box-sizing: border-box;text-align: left;line-height: 1.7;box-sizing: border-box;">
+								<h4 style="font-size: 15px;font-weight: 600;line-height: 1.4;color: #316DC3;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box; font-family:    'Merriweather', serif;">
+									HOUSING SOCIETY 
+								</h4>
+								<p style="margin-bottom: 10px;margin: 0 0 10px;box-sizing: border-box;"></p>
+							</div>
+						</div>
+					</div>
+										<!---->
+
+
+					<!---->
+					<div class="col-sm-6" style="width: 50%;float: left;position: relative;min-height: 1px;padding-left: 15px;padding-right: 15px;box-sizing: border-box;display: block;line-height: 1.7;">
+						<div style="text-align: center;border-radius: 6px;margin-top: 0px;margin-bottom: 20px;padding: 15px;border:1px solid #eeeeee;background-color: #f7f8fa;overflow: hidden;zoom:1;box-sizing: border-box; ">
+							<a href="#" style="margin-right: 30px;padding: 0px;float: left;vertical-align: top;display: table-cell;text-decoration: none;text-align: left;">
+								<img src="image/IT.png">
+							</a>
+							<div style="display: table-cell;vertical-align: top;width: 10000px;overflow: hidden;zoom:1;box-sizing: border-box;text-align: left;line-height: 1.7;box-sizing: border-box;">
+								<h4 style="font-size: 15px;font-weight: 600;line-height: 1.4;color: #316DC3;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box; font-family:    'Merriweather', serif;">
+									IT LITERACY
+								</h4>
+								<p style="margin-bottom: 10px;margin: 0 0 10px;box-sizing: border-box;"></p>
+							</div>
+						</div>
+					</div>
+					<!---->
+
+
+
+					<!---->
+					<div class="col-sm-6" style="width: 50%;float: left;position: relative;min-height: 1px;padding-left: 15px;padding-right: 15px;box-sizing: border-box;display: block;line-height: 1.7;">
+						<div style="text-align: center;border-radius: 6px;margin-top: 0px;margin-bottom: 20px;padding: 15px;border:1px solid #eeeeee;background-color: #f7f8fa;overflow: hidden;zoom:1;box-sizing: border-box; ">
+							<a href="#" style="margin-right: 30px;padding: 0px;float: left;vertical-align: top;display: table-cell;text-decoration: none;text-align: left;">
+								<img src="image/tharparkar.png">
+							</a>
+							<div style="display: table-cell;vertical-align: top;width: 10000px;overflow: hidden;zoom:1;box-sizing: border-box;text-align: left;line-height: 1.7;box-sizing: border-box;">
+								<h4 style="font-size: 15px;font-weight: 600;line-height: 1.4;color: #316DC3;margin-top: 10px;margin-bottom: 10px;box-sizing: border-box; font-family:    'Merriweather', serif;">
+									THARPARKER
+								</h4>
+								<p style="margin-bottom: 10px;margin: 0 0 10px;box-sizing: border-box;"></p>
+							</div>
+						</div>
+					</div>
+					<!---->
+				</div>
+			</div>
+
+			<div class="col-sm-4" style="width: 33.33%;float: left;position: relative;min-height: 1px;padding-right: 15px;padding-left: 15px;box-sizing: border-box;display: block;line-height: 1.7;">
+				<h3 style="margin-top: 0;position: relative;margin-bottom: 30px;padding-bottom: 10px;border-bottom: 1px solid #eeeeee;font-weight: 600;color: #316DC3;font-size: 24px;box-sizing: border-box;">Upcoming Events
+				</h3>
+				<p style="margin-bottom: 10px;margin:  0 0 10px;box-sizing: border-box;display: block;">
+					<marquee  scrollamount="2" direction="up" style="overflow: initial;overflow-y: hidden;white-space: initial;display: inline-block;text-align: initial;width: 250px;height: 250px;line-height: 1.7;color: #666666;font-size: 14px; "onmouseout="this.start();" onmouseover="this.stop();" >
+
+                        Saylani Welfare Distributing Ration &amp; Clothes to affected people of Balochistan.
+                        <a href="https://www.facebook.com/saylaniwelfare/posts/3164679946891260?__tn__=-R" style="color: blue">More Details</a>
+                        <br>
+                        <br>
+
+                            Entry Test Accouncement (Graphic Designing &amp; Video Editing/Animation Course) On Sunday 3rd March 2019 @ 11:00Am Vanue: 4rh Floor, Saylani Welfare International Trust HeadOffice Bahadurabad .
+                            <a href="https://www.facebook.com/saylaniwelfare/photos/a.258515937507690/3152781434747778/?type=3&amp;theater>" style="color: blue">More Details</a>
+                            <br>
+                            <br>
+
+                                Dr Jamil Ahmed (Additional Inspector General of Police) &amp; Atiqmir Visit Saylani Welfare International Trust, Saylani Mass I.T. Training .
+                                <a href="https://www.facebook.com/saylaniwelfare/posts/3124996217526300?__xts__[0]=68.ARCElwXqFXBXobZcA_UIl5WsTnqek6hA0692UZgzLiTQcX71VvEVoMgzqDV_LCU8l4vgjmKHex8j5abeGcQPzz-0Vo7g8gNqrP0CK04uhT29KI7ZBXw7L0UhSE9vpr7JOS4591gwSiYhmPbI_exl5O0PUbYyqzRyVjDhZf833fadxaHMxR3LURDcRfhfFRurM3x6cKNgZ7XwQi2vP6tA2-XS4HUzYNRUfZ5Yc4iUJAwXHOGi64EA62Drmy5c0mv0CZumqreWzE6JGBGOlQC5dMh7k07-qNBGwItqzarzu8CiNWC9kZMwzYyExhOY7JKF76U1ZzEbClh6A-yQYJ-qY1jbYQ&amp;__tn__=-R>" style="color: blue">More Details</a>
+                                <br>
+                                <br>
+
+                                    PIAIC Entrance Exam Merit Ranking List Announced.
+                                    <a href="https://www.saylaniwelfare.com/result" style="color: blue">More Details
+                                    </a>
+                                <br>
+                                <br>
+					</marquee>
+				</p>
+			</div>
+
+
+
+		</div>
+	</div>
+	
+</div>
+
+
+<!--Mission Ends------------------------------------------------------------------------>
+
+
+
+<!--GAllery Start------------------------------------------------------------------->
+<div style="margin-bottom: 30px;text-align: center;box-sizing: border-box;display: block;">
+                        <div style="margin-right: -15px;margin-left: -15px;box-sizing: border-box;display: block;text-align: center;">
+                            <div class="col-sm-10" style="margin-left: 8.333%;width: 83.333%;float: left;position: relative;padding-right: 15px;padding-left: 15px;box-sizing: border-box;display: block;">
+                                <h2 style="margin-top: 0px;font-family: 'Merriweather', serif;color: #316DC3;font-weight: 600;font-size: 32px;">Image <span style="font-weight:600;color: #427900;font-size: 31px;">Gallery</span>
+                                </h2>
+                                <div class="title-icon ">
+                                    <img src="image/salog.png" style="height: 40px;">
+                                    <br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+<div class="row" style="align-content: center;">
+  <center>
+  <div class="container">
+  <div class="col-sm-3">
+    <img src="image/rashan2.jpg" style="width:80%;border: 2px solid black;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div  class="col-sm-3">
+    <img src="image/food.jpg" style="width:80%;border: 2px solid black;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div  class="col-sm-3">
+    <img src="image/hazrat.jpg" style="width:80%;border: 2px solid black;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div  class="col-sm-3">
+    <img src="image/hazrat2.jpg" style="width:80%;border: 2px solid black;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  </center>
+  </div>
+
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="image/rashan2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="image/food.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="image/hazrat.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="image/hazrat2.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="image/rashan2.jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/food.jpg" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/hazrat.jpg" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="image/hazrat2.jpg" style="width:100%" onclick="currentSlide(4)">
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<!--Gallery Ends--------------------------------------------------------------------->
+<br>
+<!--Footer-->
+<footer class="footer" style="background-color: #333333">
+	<div class="container" style="padding-bottom:40px;padding-top: 70px;width: 970px;padding-right: 15px;padding-left: 15px;margin-right: auto;margin-left: auto;box-sizing: border-box;background-color: #333333;">
+		<div style="margin-right: -15px;margin-left: -15px;box-sizing: border-box;line-height: 1.7;">
+			<div class="col-sm-4" style="width: 33.33%;float: left;position: relative;padding-right: 15px;padding-left: 15px;box-sizing: border-box;">
+				<div style="color: #bbb;">
+					<p>
+						"Head Office,"
+						<br>
+						A-25, Bahadurabad Chowrangi
+										 Karachi, Pakistan
+					</p>
+					<ul >
+						<li style="display: inline-block;">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							UAN: 111-729-526
+						</li>
+						<li style="display: inline-block;">
+							<i class="fa fa-globe" aria-hidden="true"></i>
+							(+0092-213) 4130786-90
+						</li>
+						<li style="display: inline-block;">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							CELL: 92-311-1729526
+						</li>
+						<li style="display: inline-block;">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							USA NO +1(716)941 7792 
+						</li>
+						<li style="display: inline-block;">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							UK NO (+44)115 970 6256 
+						</li>
+						<li style="display: inline-block;">
+							<i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+							info@saylaniwelfare.com
+						</li>
+					</ul>
+				</div>	
+			</div>
+
+			<div class="col-sm-4" style="width:  33.3%; float: left;">
+				<div style="color: #bbb;">
+					<h5 style="border-bottom: 1px solid #444;margin-top: 0px;color: white;margin-bottom: 20px;padding-bottom: 10px;font-weight: 600px;line-height: 1.4;">Useful Links</h5>
+				</div>
+			</div>
+
+			<div class="col-sm-4" style="float: left;">
+				<div style="margin-bottom: 30px;box-sizing: border-box;display: inline-block;">
+					<h5 style="margin-top: 0px;color: white;margin-bottom: 10px;font-weight: 600;line-height: 1.4">Connect With Us
+					</h5>
+					<ul>
+						<li style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block;">
+							<a href="#" style="margin-bottom: 0px;color: white;font-size: 35px;height: 35px; margin:2px 7px 2px 0; width: 35px;border-radius: 50%;">
+								<i class="fa fa-facebook" aria-hidden="true"></i>
+							</a>
+						</li>
+
+
+						<li style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block;">
+							<a href="#" style="margin-bottom: 0px;color: white;font-size: 35px;height: 35px; margin:2px 7px 2px 0; width: 35px;border-radius: 50%;">
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							</a>
+						</li>
+
+						<li style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block;">
+							<a href="#" style="margin-bottom: 0px;color: white;font-size: 35px;height: 35px; margin:2px 7px 2px 0; width: 35px;border-radius: 50%;">
+								<i class="fa fa-instagram" aria-hidden="true"></i>
+
+							</a>
+						</li>
+
+						<li style="margin-bottom: 0px;padding-bottom: 0px;display: inline-block;">
+							<a href="#" style="margin-bottom: 0px;color: white;font-size: 35px;height: 25px; margin:2px 7px 2px 0px; width: 35px;border-radius: 50%;">
+								<i class="fa fa-youtube-square" aria-hidden="true"></i>
+
+							</a>
+						</li>
+
+					</ul>
+				</div>
+				
+			</div>
+
+		</div>
+	</div>
+</footer>
+<div>
+		<div class="col-sm-12" style="color: white;width: 100%;background-color: blue; max-width: 100%;"><p  style="padding-left: 130px;font-weight: 600px;margin-top: 7px;">Copyright © 2020 Saylani Welfare</p> </div>			
+		
+	</div>
+<!--End Footer-->
+</body>
+</html>
